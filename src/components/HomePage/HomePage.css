@@ -1,0 +1,70 @@
+.home-page {
+    display: flex;
+    position: relative; /* Add position relative to the home-page */
+    height: 100vh; /* Make the page take up the full height of the viewport */
+    padding-left: 2%;
+  }
+  
+  .main-panel {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-panel a {
+    display: block;
+    margin-bottom: 5vh; /* Adjust the spacing between links */
+  }
+
+  .main-panel h1 {
+    margin-bottom: 10vh;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: absolute;
+    bottom: 5vh; /* Adjust the distance from the bottom */
+    right: 5vh; /* Adjust the distance from the right */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Position the dropdown above the button */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: #C8E1CC;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #8FAF8D;
+  }
+  
+  button {
+    background-color: #B8D8BE; /* Set the background color */
+    color: black; /* Set the text color */
+    font-family: Verdana, sans-serif; /* Use the Verdana font */
+    border: none; /* Remove border */
+    border-radius: 0; /* Use square corners */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  button:hover {
+    background-color: #A2C8A1; /* Darken the background color on hover */
+  }
+  
+  
+  

@@ -1,0 +1,23 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.left-pane {
+  flex: 1; /* Take up one-third of the width */
+  max-width: 15%; /* Ensure it doesn't exceed one-third of the width */
+  background-color: #B8D8BE;
+}
+
+.main-content {
+  flex: 2; /* Take up two-thirds of the width */
+  background-color: #FCF5EE;
+}
+
+.right-pane{
+  background-color: #C8E1CC;
+}
