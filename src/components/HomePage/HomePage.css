@@ -32,12 +32,12 @@
     position: absolute;
     bottom: 100%; /* Position the dropdown above the button */
     background-color: #f9f9f9;
-    min-width: 160px;
     z-index: 1;
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
+    min-width: 100%;
   }
   
   .dropdown-content button {
