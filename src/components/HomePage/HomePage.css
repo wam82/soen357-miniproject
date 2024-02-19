@@ -24,6 +24,7 @@
     position: absolute;
     bottom: 5vh; /* Adjust the distance from the bottom */
     right: 5vh; /* Adjust the distance from the right */
+    width: fit-content; /* Set the width to fit the content */
   }
   
   .dropdown-content {
