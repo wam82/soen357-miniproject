@@ -2,7 +2,8 @@ import './App.css';// eslint-disable-next-line
 import { useEffect, useState } from "react";// eslint-disable-next-line 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../src/components/HomePage/HomePage'
-import LeftPane from '../src/components/LeftPane/LeftPane';
+import LeftPane from './components/Panels/LeftPane';
+import PrescriptionPage from '../src/components/Prescription/PrescriptionPage';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <div className="main-content">
           <Routes>
             <Route exact path="/" element={<Home />} />
-            {/* Define routes for other pages */}
+            <Route path='/prescriptions' exact Component={PrescriptionPage}/>
           </Routes>
         </div>
     </div>

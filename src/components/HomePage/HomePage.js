@@ -1,5 +1,6 @@
 import React from 'react';
-import './HomePage.css'
+import './HomePage.css';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -8,7 +9,7 @@ function HomePage() {
 
         <h1>Home</h1>
 
-        <a href="/">My Prescriptions</a>
+        <Link to="/prescriptions">My Prescriptions</Link>
         <a href="/">My Medical History & Allergies</a>
         <a href="/">My Vaccines</a>
         <a href="/">My Surgeries & Hospitalizations</a>
@@ -25,7 +26,7 @@ function HomePage() {
             <button>French</button>
           </div>
         </div>
-        
+
       </div>
     </div>
   );
