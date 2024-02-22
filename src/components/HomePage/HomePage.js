@@ -10,7 +10,7 @@ function HomePage() {
         <h1>Home</h1>
 
         <Link to="/prescriptions">My Prescriptions</Link>
-        <a href="/">My Medical History & Allergies</a>
+        <Link to="/medical-history">My Medical History & Allergies</Link>
         <a href="/">My Vaccines</a>
         <a href="/">My Surgeries & Hospitalizations</a>
         <a href="/">My Lab Tests</a>

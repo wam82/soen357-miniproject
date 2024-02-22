@@ -1,5 +1,5 @@
 import React from 'react';
-import './PrescriptionPage.css'
+import './MedHistory.css'
 import RightPanel from '../Panels/RightPane';
 
 function PrescriptionPage() {
@@ -13,7 +13,7 @@ function PrescriptionPage() {
         <div className='right-panel'><RightPanel currentPage="prescriptions" /></div>  
 
         {/* Active Prescriptions */}
-        <h2 id="active">Active Prescriptions</h2>
+        <h2 id="active">Medical History</h2>
         <table>
           <thead>
             <tr>
@@ -34,7 +34,7 @@ function PrescriptionPage() {
         </table>
 
         {/* To Renew Prescriptions */}
-        <h2 id="to-renew">Prescriptions To Renew</h2>
+        <h2 id="to-renew">Allergies</h2>
         <table>
           <thead>
             <tr>
