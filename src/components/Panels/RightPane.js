@@ -1,5 +1,6 @@
 // RightPanel.js
 import React from 'react';
+import './RightPane.css'
 
 function RightPanel({ currentPage }) {
   let content;
@@ -10,7 +11,7 @@ function RightPanel({ currentPage }) {
       content = (
         <div>
           <h2 id='prescription'>View Prescriptions</h2>
-          <ul>
+          <ul className='list'>
             <li><a href="#active">Active</a></li>
             <li><a href="#to-renew">To Renew</a></li>
             <li><a href="#expired">Expired</a></li>

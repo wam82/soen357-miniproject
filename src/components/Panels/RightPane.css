@@ -1,7 +1,4 @@
-.right-panel{
-    position: sticky;
-}
-
-#prescription{
-    padding-bottom: 100%;
-}
+.list {
+    list-style-type: none; /* Hide list markers (bullets) */
+  }
+  

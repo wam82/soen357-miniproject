@@ -1,19 +1,46 @@
-  .left-pane {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align content to the top vertically */
-    text-align: center;
-    height: 100%;
-  }
-  
-  .left-pane img {
-    width: 300%;
-    height: auto;
-    padding-top: 3vh;
-    padding-bottom: 2vh;
-  }  
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align content to the top vertically */
+  height: 100vh;
+  width: 100%;
+}
 
-  .left-pane a {
-    white-space: nowrap; /* Ensure the text appears on a single line */
-  }
+.left-pane img {
+  width: 50%;
+  height: auto;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  align-items: center;
+}
+
+.left-pane a {
+  white-space: nowrap; /* Ensure the text appears on a single line */
+}
+
+.temp{
+ width: 100%; 
+ display: flex;
+ flex-direction: column; 
+ align-items: center;
+}
+
+.temp ul {
+  width: 100%; /* Set the width of the ul to match the parent container */
+  list-style-type: none;
+}
+
+.temp ul li {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Set the width of list items to match the parent container */
+  margin: 5px; /* Adjust margin as needed */
+}
+
+.temp ul li a {
+  width: 100%; /* Set the width of the anchor tag to fill the list item */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflowing content */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+}
