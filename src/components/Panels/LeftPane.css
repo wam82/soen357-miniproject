@@ -1,0 +1,19 @@
+  .left-pane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top vertically */
+    text-align: center;
+    height: 100%;
+  }
+  
+  .left-pane img {
+    width: 300%;
+    height: auto;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+  }  
+
+  .left-pane a {
+    white-space: nowrap; /* Ensure the text appears on a single line */
+  }

@@ -1,0 +1,24 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.container {
+  display: flex; /* Use flexbox to arrange the left pane and main content */
+  height: 100vh; /* Set height to 100% of the viewport height */
+}
+
+.left-pane {
+  flex: 1; /* Take up one-third of the width */
+  background-color: #B8D8BE;
+  max-width: 15%;
+}
+
+.main-content {
+  flex: 2; /* Take up two-thirds of the width */
+  background-color: #FCF5EE;
+  overflow-y: auto;
+}
+
+.right-pane{
+  background-color: #C8E1CC;
+}

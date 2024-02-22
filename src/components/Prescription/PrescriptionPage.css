@@ -1,0 +1,112 @@
+.core {
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding-left: 2%;
+  }
+  
+  .main-panel {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-panel a {
+    display: block;
+    margin-bottom: 5vh; /* Adjust the spacing between links */
+  }
+
+  .main-panel h1 {
+    margin-bottom: 10vh;
+  }
+  
+  .dropdown-container {
+    position: fixed; /* Change to fixed */
+    bottom: 0; /* Adjust the distance from the bottom */
+    right: 16%; /* Adjust the distance from the right */
+    z-index: 1;
+  }
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: #C8E1CC;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #8FAF8D;
+  }
+  
+  
+  button {
+    background-color: #B8D8BE; /* Set the background color */
+    color: black; /* Set the text color */
+    font-family: Verdana, sans-serif; /* Use the Verdana font */
+    border: none; /* Remove border */
+    border-radius: 0; /* Use square corners */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  button:hover {
+    background-color: #A2C8A1; /* Darken the background color on hover */
+  }
+  
+  
+  /* Style for the tables */
+table {
+    width: 100vh; /* Set the table width to 100% */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Add spacing between tables */
+  }
+  
+  /* Style for table headers */
+  th {
+    background-color: #E5D4C0; /* Light background color */
+    border: 1px solid #FCF5EE; /* Border */
+    padding: 8px; /* Padding */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Style for table data */
+  td {
+    border: 1px solid #FCF5EE; /* Border */
+    padding: 8px; /* Padding */
+  }
+  
+  /* Style for alternating rows */
+  tr:nth-child(odd) {
+    background-color: #F1E8DF; /* Lighter background color for even rows */
+  }
+  
+  /* RightPanel.css */
+.right-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 15%;
+    background-color: #C8E1CC; /* Background color */
+    padding: 20px; /* Padding */
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
