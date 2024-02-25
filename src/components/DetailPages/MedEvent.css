@@ -24,6 +24,10 @@
   .main-panel h1 {
     margin-bottom: 5vh;
   }
+
+  .main-panel p{
+    margin-right: 30%;
+  }
   
   .dropdown-container {
     position: fixed; /* Change to fixed */
@@ -77,32 +81,6 @@
     background-color: #A2C8A1; /* Darken the background color on hover */
   }
   
-  
-  /* Style for the tables */
-table {
-    width: 100vh; /* Set the table width to 100% */
-    border-collapse: collapse;
-    margin-bottom: 20px; /* Add spacing between tables */
-  }
-  
-  /* Style for table headers */
-  th {
-    background-color: #E5D4C0; /* Light background color */
-    border: 1px solid #FCF5EE; /* Border */
-    padding: 8px; /* Padding */
-    text-align: left; /* Align text to the left */
-  }
-  
-  /* Style for table data */
-  td {
-    border: 1px solid #E5D4C0; /* Border */
-    padding: 8px; /* Padding */
-  }
-  
-  /* Style for alternating rows */
-  tr:nth-child(odd) {
-    background-color: #F1E8DF; /* Lighter background color for even rows */
-  }
   
   /* RightPanel.css */
 .right-panel {

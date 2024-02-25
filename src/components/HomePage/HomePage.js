@@ -11,12 +11,10 @@ function HomePage() {
 
         <Link to="/prescriptions">My Prescriptions</Link>
         <Link to="/medical-history">My Medical History & Allergies</Link>
-        <a href="/">My Vaccines</a>
-        <a href="/">My Surgeries & Hospitalizations</a>
-        <a href="/">My Lab Tests</a>
-        <a href="/">My Scans</a>
-        <a href="/">My Photos</a>
-        <a href="/">Take a Photo</a>
+        <Link to="/vaccines">My Vaccines</Link>
+        <Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link>
+        <Link to="/lab">My Lab Tests</Link>
+        <Link to="/scans">My Scans</Link>
         
         <div className="dropdown">
           <button className="dropbtn">Languages</button>

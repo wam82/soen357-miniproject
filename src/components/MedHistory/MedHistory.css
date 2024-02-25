@@ -95,7 +95,7 @@ table {
   
   /* Style for table data */
   td {
-    border: 1px solid #FCF5EE; /* Border */
+    border: 1px solid #E5D4C0; /* Border */
     padding: 8px; /* Padding */
   }
   
@@ -109,7 +109,7 @@ table {
     position: fixed;
     top: 0;
     right: 0;
-    max-width: 15%;
+    width: 15%;
     background-color: #C8E1CC; /* Background color */
     padding: 20px; /* Padding */
     height: 100vh;

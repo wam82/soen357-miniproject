@@ -3,15 +3,6 @@ import './LeftPane.css'; //eslint-disable-next-line
 import { Link } from 'react-router-dom';
 import image from '../Images/Profile.png'
 
-// function LeftPane() {
-//   return (
-//     <div className="left-pane">
-//       <img src="Profile.PNG" alt="Profile" />
-//       <a href="/">My Profile</a>
-//     </div>
-//   );
-// }
-
 function LeftPane({ currentPage }) {
   let content;
 
@@ -24,10 +15,42 @@ function LeftPane({ currentPage }) {
           <a href="/">My Profile</a>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/">My Medical History & Allergies</Link></li>
-            <li><Link to="/">My Vaccines</Link></li>
-            <li><Link to="/">My Surgeries & Hospitalizations</Link></li>
-            <li><Link to="/">My Lab Tests</Link></li>
+            <li><Link to="/medical-history">My Medical History & Allergies</Link></li>
+            <li><Link to="/vaccines">My Vaccines</Link></li>
+            <li><Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link></li>
+            <li><Link to="/lab">My Lab Tests</Link></li>
+            <li><Link to="/">My Scans</Link></li>
+          </ul>
+        </div>
+      );
+      break;
+      case 'medical-history':
+      content = (
+        <div className='temp'>
+          <img src={image} alt="Profile" />
+          <a href="/">My Profile</a>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/prescriptions">My Prescriptions</Link></li>
+            <li><Link to="/vaccines">My Vaccines</Link></li>
+            <li><Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link></li>
+            <li><Link to="/lab">My Lab Tests</Link></li>
+            <li><Link to="/">My Scans</Link></li>
+          </ul>
+        </div>
+      );
+      break;
+      case 'vaccines':
+      content = (
+        <div className='temp'>
+          <img src={image} alt="Profile" />
+          <a href="/">My Profile</a>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/prescriptions">My Prescriptions</Link></li>
+            <li><Link to="/medical-history">My Medical History & Allergies</Link></li>
+            <li><Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link></li>
+            <li><Link to="/lab">My Lab Tests</Link></li>
             <li><Link to="/">My Scans</Link></li>
           </ul>
         </div>
@@ -39,6 +62,9 @@ function LeftPane({ currentPage }) {
         <div className="temp">
           <img src={image} alt="Profile" />
           <a href="/">My Profile</a>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+          </ul>
         </div>
       ); // Default content if the page doesn't have specific content
   }
