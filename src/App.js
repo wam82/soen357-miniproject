@@ -40,6 +40,7 @@ import PelvicCT from './components/DetailPages/PelvicCT';
 import AbdoUS from './components/DetailPages/AbdmoninalUS';
 import ObsUS from './components/DetailPages/ObstetricUS';
 import CardiacUS from './components/DetailPages/CardiacUS';
+import ProfilePage from './components/ProfilePage/Profile';
 
 
 function App() {
@@ -95,6 +96,7 @@ function App() {
             <Route path='/abdominal-us' exact Component={AbdoUS}/>
             <Route path='/obstetric-us' exact Component={ObsUS}/>
             <Route path='/cardiac-us' exact Component={CardiacUS}/>
+            <Route path='/profile' exact Component={ProfilePage}/>
           </Routes>
         </div>
     </div>

@@ -12,7 +12,7 @@ function LeftPane({ currentPage }) {
       content = (
         <div className='temp'>
           <img src={image} alt="Profile" />
-          <a href="/">My Profile</a>
+          <Link to="/profile">My Profile</Link>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/medical-history">My Medical History & Allergies</Link></li>
@@ -28,7 +28,7 @@ function LeftPane({ currentPage }) {
       content = (
         <div className='temp'>
           <img src={image} alt="Profile" />
-          <a href="/">My Profile</a>
+          <Link to="/profile">My Profile</Link>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/prescriptions">My Prescriptions</Link></li>
@@ -44,7 +44,7 @@ function LeftPane({ currentPage }) {
       content = (
         <div className='temp'>
           <img src={image} alt="Profile" />
-          <a href="/">My Profile</a>
+          <Link to="/profile">My Profile</Link>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/prescriptions">My Prescriptions</Link></li>
@@ -60,7 +60,7 @@ function LeftPane({ currentPage }) {
       content = (
         <div className='temp'>
           <img src={image} alt="Profile" />
-          <a href="/">My Profile</a>
+          <Link to="/profile">My Profile</Link>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/prescriptions">My Prescriptions</Link></li>
@@ -76,7 +76,7 @@ function LeftPane({ currentPage }) {
       content = (
         <div className='temp'>
           <img src={image} alt="Profile" />
-          <a href="/">My Profile</a>
+          <Link to="/profile">My Profile</Link>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/prescriptions">My Prescriptions</Link></li>
@@ -92,7 +92,7 @@ function LeftPane({ currentPage }) {
       content = (
         <div className='temp'>
           <img src={image} alt="Profile" />
-          <a href="/">My Profile</a>
+          <Link to="/profile">My Profile</Link>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/prescriptions">My Prescriptions</Link></li>
@@ -109,7 +109,7 @@ function LeftPane({ currentPage }) {
       content = (
         <div className="temp">
           <img src={image} alt="Profile" />
-          <a href="/">My Profile</a>
+          <Link to="/profile">My Profile</Link>
           <ul>
             <li><Link to="/">Home</Link></li>
           </ul>

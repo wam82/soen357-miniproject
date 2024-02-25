@@ -1,0 +1,41 @@
+.core {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 2%;
+  }
+
+  input[type="text"]{
+    background-color: #F1E8DF; /* Set background color */
+    padding: 8px;
+    border: 1px solid #E5D4C0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  input[type="file"]{
+    display: none;
+  }
+
+  .custom-upload{
+    background-color: #B8D8BE; /* Set the background color */
+    color: black; /* Set the text color */
+    font-family: Verdana, sans-serif; /* Use the Verdana font */
+    border: none; /* Remove border */
+    border-radius: 0; /* Use square corners */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+  .profilePicture{
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  label{
+    padding-right: 1%;
+  }
+
+  
