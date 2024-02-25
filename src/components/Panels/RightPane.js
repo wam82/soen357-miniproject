@@ -79,6 +79,53 @@ function RightPanel({ currentPage }) {
         </div>
       );
       break;
+      case 'MedEvent':
+      content = (
+        <div>
+          <h2 id='prescription'>Jump to</h2>
+          <ul className='list'>
+            <li><a href="#symptom">Typical Symptoms</a></li>
+            <li><a href="#risk">Risk Factors</a></li>
+            <li><a href="#plan">Treatment Plan</a></li>
+            <li><a href="#impact">Impacts</a></li>
+          </ul>
+        </div>
+      );
+      break;
+      case 'LabEvent':
+      content = (
+        <div>
+          <h2 id='prescription'>Jump to</h2>
+          <ul className='list'>
+            <li><a href="#result">Results</a></li>
+            <li><a href="#recommendation">Recommendations</a></li>
+          </ul>
+        </div>
+      );
+      break;
+      case 'ScanEvent':
+      content = (
+        <div>
+          <h2 id='prescription'>Jump to</h2>
+          <ul className='list'>
+            <li><a href="#result">Scan Results</a></li>
+            <li><a href='#interpretation'>Professional Interpretation</a></li>
+            <li><a href="#recommendation">Recommendations</a></li>
+          </ul>
+        </div>
+      );
+      break;
+      case 'SurgeryEvent':
+      content = (
+        <div>
+          <h2 id='prescription'>Jump to</h2>
+          <ul className='list'>
+            <li><a href="#postop">Recommendations</a></li>
+            <li><a href='#anesthesia'>Anesthesia Details</a></li>
+          </ul>
+        </div>
+      );
+      break;
     // Add cases for other pages if needed
     default:
       content = null; // Default content if the page doesn't have specific content
