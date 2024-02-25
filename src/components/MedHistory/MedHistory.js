@@ -1,154 +1,140 @@
 import React from 'react';
 import './MedHistory.css'
 import RightPanel from '../Panels/RightPane';
+import { Link } from 'react-router-dom';
 
-function PrescriptionPage() {
+function MedHistory() {
   return (
     <div className="core">
       <div className="main-panel">
 
-        <h1>My Prescriptions</h1>
+        <h1>My Medical History</h1>
 
         
-        <div className='right-panel'><RightPanel currentPage="prescriptions" /></div>  
+        <div className='right-panel'><RightPanel currentPage="medical-history" /></div>  
 
         {/* Active Prescriptions */}
-        <h2 id="active">Medical History</h2>
+        <h2 id="timeline">Timeline</h2>
         <table>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Date prescribed</th>
-              <th>Expiring Date</th>
+              <th>Medical Event</th>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Details</th>
             </tr>
           </thead>
           <tbody>
             {/* Rows for active prescriptions */}
             <tr>
-              <td>Prescription 18</td>
+              <td>Event 1</td>
               <td>YYYY-MM-DD</td>
+              <td>Surgery</td>
+              <td><Link to="/event1">View Details</Link></td>
+            </tr>
+            <tr>
+              <td>Event 2</td>
               <td>YYYY-MM-DD</td>
+              <td>Scan</td>
+              <td><Link to="/event1">View Details</Link></td>
+            </tr>
+            {/* Add more rows */}
+          </tbody>
+        </table>
+
+        <h2 id="conditions">My Conditions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date diagnosed</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* Rows for active prescriptions */}
+            <tr>
+              <td>Condition 1</td>
+              <td>YYYY-MM-DD</td>
+              <td><Link to="/event1">View Details</Link></td>
+            </tr>
+            {/* Add more rows */}
+          </tbody>
+        </table>
+
+        <h2 id="family">My Family's Medical History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Medical Event</th>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Relative</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* Rows for active prescriptions */}
+            <tr>
+              <td>Event 1</td>
+              <td>YYYY-MM-DD</td>
+              <td>Surgery</td>
+              <td>John Doe</td>
+              <td><Link to="/event1">View Details</Link></td>
+            </tr>
+            <tr>
+              <td>Event 2</td>
+              <td>YYYY-MM-DD</td>
+              <td>Scan</td>
+              <td>Jane Doe</td>
+              <td><Link to="/event1">View Details</Link></td>
             </tr>
             {/* Add more rows */}
           </tbody>
         </table>
 
         {/* To Renew Prescriptions */}
-        <h2 id="to-renew">Allergies</h2>
+        <h2 id="allergies">Allergies</h2>
         <table>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Date prescribed</th>
-              <th>Expiring Date</th>
+              <th>Allergy</th>
+              <th>Date diagnosed</th>
+              <th>Requires Epipen?</th>
             </tr>
           </thead>
           <tbody>
             {/* Rows for prescriptions to renew */}
             <tr>
-              <td>Prescription 1</td>
+              <td>Allergy 1</td>
               <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
+              <td>Yes</td>
             </tr>
 
             <tr>
-              <td>Prescription 3</td>
+              <td>Allergy 2</td>
               <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 4</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 5</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 6</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 7</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 8</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 9</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 10</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 11</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 12</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 13</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 14</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 15</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 16</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 17</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
+              <td>No</td>
             </tr>
             {/* Add more rows */}
           </tbody>
         </table>
 
-        {/* Expired Prescriptions */}
-        <h2 id="expired">Expired Prescriptions</h2>
+        <h2 id="providers">Healthcare Providers</h2>
         <table>
           <thead>
             <tr>
+              <th>Role</th>
               <th>Name</th>
-              <th>Date prescribed</th>
-              <th>Expiring Date</th>
+              <th>Latest Consultation Date</th>
+              <th>First Consultation Date</th>
             </tr>
           </thead>
           <tbody>
-            {/* Rows for expired prescriptions */}
+            {/* Rows for prescriptions to renew */}
             <tr>
-              <td>Prescription 1</td>
-              <td>YYYY-MM-DD</td>
-              <td>YYYY-MM-DD</td>
-            </tr>
-            <tr>
-              <td>Prescription 2</td>
+              <td>Family Doctor</td>
+              <td>Jane Doe</td>
               <td>YYYY-MM-DD</td>
               <td>YYYY-MM-DD</td>
             </tr>
@@ -171,4 +157,4 @@ function PrescriptionPage() {
   );
 }
 
-export default PrescriptionPage;
+export default MedHistory;

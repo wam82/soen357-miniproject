@@ -1,0 +1,96 @@
+.core {
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding-left: 2%;
+  }
+
+  .left-panel {
+    flex: 1; /* Take up one-third of the width */
+    background-color: #B8D8BE;
+    /* max-width: 15%; */
+  }
+  
+  .main-panel {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-panel a {
+    display: block;
+    margin-bottom: 5vh; /* Adjust the spacing between links */
+  }
+
+  .main-panel h1 {
+    margin-bottom: 5vh;
+  }
+
+  .main-panel p{
+    margin-right: 30%;
+  }
+  
+  .dropdown-container {
+    position: fixed; /* Change to fixed */
+    bottom: 0; /* Adjust the distance from the bottom */
+    right: 16%; /* Adjust the distance from the right */
+    z-index: 1;
+  }
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: #C8E1CC;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #8FAF8D;
+  }
+  
+  
+  button {
+    background-color: #B8D8BE; /* Set the background color */
+    color: black; /* Set the text color */
+    font-family: Verdana, sans-serif; /* Use the Verdana font */
+    border: none; /* Remove border */
+    border-radius: 0; /* Use square corners */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  button:hover {
+    background-color: #A2C8A1; /* Darken the background color on hover */
+  }
+  
+  
+  /* RightPanel.css */
+.right-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 15%;
+    background-color: #C8E1CC; /* Background color */
+    padding: 20px; /* Padding */
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
