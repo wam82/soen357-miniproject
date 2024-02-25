@@ -19,7 +19,7 @@ function LeftPane({ currentPage }) {
             <li><Link to="/vaccines">My Vaccines</Link></li>
             <li><Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link></li>
             <li><Link to="/lab">My Lab Tests</Link></li>
-            <li><Link to="/">My Scans</Link></li>
+            <li><Link to="/scans">My Scans</Link></li>
           </ul>
         </div>
       );
@@ -35,7 +35,7 @@ function LeftPane({ currentPage }) {
             <li><Link to="/vaccines">My Vaccines</Link></li>
             <li><Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link></li>
             <li><Link to="/lab">My Lab Tests</Link></li>
-            <li><Link to="/">My Scans</Link></li>
+            <li><Link to="/scans">My Scans</Link></li>
           </ul>
         </div>
       );
@@ -51,7 +51,55 @@ function LeftPane({ currentPage }) {
             <li><Link to="/medical-history">My Medical History & Allergies</Link></li>
             <li><Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link></li>
             <li><Link to="/lab">My Lab Tests</Link></li>
-            <li><Link to="/">My Scans</Link></li>
+            <li><Link to="/scans">My Scans</Link></li>
+          </ul>
+        </div>
+      );
+      break;
+      case 'surgeries-and-hospitalizations':
+      content = (
+        <div className='temp'>
+          <img src={image} alt="Profile" />
+          <a href="/">My Profile</a>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/prescriptions">My Prescriptions</Link></li>
+            <li><Link to="/medical-history">My Medical History & Allergies</Link></li>
+            <li><Link to="/vaccines">My Vaccines</Link></li>
+            <li><Link to="/lab">My Lab Tests</Link></li>
+            <li><Link to="/scans">My Scans</Link></li>
+          </ul>
+        </div>
+      );
+      break;
+      case 'lab':
+      content = (
+        <div className='temp'>
+          <img src={image} alt="Profile" />
+          <a href="/">My Profile</a>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/prescriptions">My Prescriptions</Link></li>
+            <li><Link to="/medical-history">My Medical History & Allergies</Link></li>
+            <li><Link to="/vaccines">My Vaccines</Link></li>
+            <li><Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link></li>
+            <li><Link to="/scans">My Scans</Link></li>
+          </ul>
+        </div>
+      );
+      break;
+      case 'scans':
+      content = (
+        <div className='temp'>
+          <img src={image} alt="Profile" />
+          <a href="/">My Profile</a>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/prescriptions">My Prescriptions</Link></li>
+            <li><Link to="/medical-history">My Medical History & Allergies</Link></li>
+            <li><Link to="/vaccines">My Vaccines</Link></li>
+            <li><Link to="/surgeries-and-hospitalizations">My Surgeries & Hospitalizations</Link></li>
+            <li><Link to="/lab">My Lab Tests</Link></li>
           </ul>
         </div>
       );
